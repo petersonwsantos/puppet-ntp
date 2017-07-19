@@ -1,2 +1,2 @@
 # virti-puppet-ntp
-ViRti - Puppet module for NTP 
+ViRTi - Puppet module for NTP 
