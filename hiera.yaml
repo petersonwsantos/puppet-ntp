@@ -1,0 +1,11 @@
+---
+version: 5
+defaults:
+  datadir: data
+  data_hash: yaml_data
+hierarchy:
+  - name: "Other YAML hierarchy levels"
+    path: "os/%{facts.os.family}.yaml"
+
+  - name: "Other ssssssYAML hierarchy levels"
+    path:  "common.yaml"

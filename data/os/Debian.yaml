@@ -1,0 +1,15 @@
+---
+ntp::config_restrict:
+  - '-4 default kod notrap nomodify nopeer noquery limited'
+  - '-6 default kod notrap nomodify nopeer noquery limited'
+  - '127.0.0.1'
+  - '::1'
+ntp::config_servers:
+  - '0.debian.pool.ntp.org'
+  - '1.debian.pool.ntp.org'
+  - '0.ubuntu.pool.ntp.org'
+  - '1.ubuntu.pool.ntp.org'
+  - 'ntp.ubuntu.com'
+ntp::config_driftfile: 
+  - '/var/lib/ntp/ntp.drift'
+ntp::service_name: ntp
