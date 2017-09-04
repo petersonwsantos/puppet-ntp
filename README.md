@@ -1,4 +1,5 @@
 
+[![Build Status](https://travis-ci.org/petersonwsantos/puppet-ntp.svg?branch=master)](https://travis-ci.org/petersonwsantos/puppet-ntp)
 [![GitHub release](https://img.shields.io/github/release/petersonwsantos/puppet-ntp.svg)](https://github.com/petersonwsantos/windows_desktop_packages/releases)
 [![GitHub issues](https://img.shields.io/github/issues/petersonwsantos/puppet-ntp.svg)](https://github.com/petersonwsantos/windows_desktop_packages/issues)
 
