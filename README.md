@@ -29,6 +29,10 @@ include '::ntp'
 
 ### Change NTP servers
 
+List of Stratum One Time Servers
+
+[![List of Stratum One Time Servers](http://support.ntp.org/pub/TWiki/TWikiLogos/ntp_logo.png)](http://support.ntp.org/bin/view/Servers/StratumOneTimeServers)
+
 ```puppet
 class { '::ntp':
   config_servers => [ 'ntp1.corp.com', 'ntp2.corp.com' ],
@@ -100,3 +104,4 @@ ntp::config_restrict:
 ntp::config_driftfile: driftfile /var/lib/ntp/drift
 
 ```
+
