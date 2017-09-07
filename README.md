@@ -101,7 +101,6 @@ ntp::config_restrict:
   - '-6 default kod nomodify notrap nopeer noquery'
   - '127.0.0.1'
   - '-6 ::1'
-ntp::config_driftfile: '/var/lib/ntp/drift'
 
 ```
 

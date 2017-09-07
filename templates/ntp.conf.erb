@@ -1,6 +1,4 @@
-<% scope['ntp::config_driftfile'].each do |value2| -%>
-driftfile <%= value2 %>
-<% end -%>
+driftfile /var/lib/ntp/drift
 
 #statistics loopstats peerstats clockstats
 #filegen loopstats file loopstats type day enable

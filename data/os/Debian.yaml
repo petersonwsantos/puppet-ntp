@@ -4,5 +4,4 @@ ntp::config_restrict:
   - '-6 default kod notrap nomodify nopeer noquery limited'
   - '127.0.0.1'
   - '::1'
-ntp::config_driftfile: '/var/lib/ntp/ntp.drift'
 ntp::service_name: ntp
