@@ -14,8 +14,7 @@
 #                      service_ensure    | Status service. Default value: 'running'
 # @param [String]      service_name      | Name ntp service. Default value? 'ntpd'
 # @param Array[String] config_restrict   | Option restrict parameters. Default value: {}
-# @param [Stdlib::Absolutepath]
-#                      config_driftfile  | path for config_driftfile. Default value: '/var/lib/ntp/ntp.drift'
+#
 # @param Array[String] config_servers    | List of Stratum Time Servers. Default value: {}
 #
 # @example
