@@ -1,8 +1,10 @@
 # ntp::config
 #
-# A description of what this class does
+# Used for managing installation and configuration NTP Server
 #
-# @summary A short summary of the purpose of this class
+# @author Peterson W. Santos
+#
+# @summary The purpose of this class is configure the installed software  
 #
 # @example
 #   include ntp::config
@@ -13,5 +15,4 @@ class ntp::config  inherits ntp {
     mode    => '0644',
     content => template('ntp/ntp.conf.erb'),
   }
-
 }

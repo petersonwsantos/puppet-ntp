@@ -1,12 +1,4 @@
 ---
-ntp::package_ensure: present
-ntp::package_manage: true
-ntp::package_name: 
-  - 'ntp'
-ntp::service_name: ntpd
-ntp::service_enable: true
-ntp::service_ensure: running
-ntp::service_manage: true
 ntp::config_servers:
   - '0.pool.ntp.org'
   - '1.pool.ntp.org'
@@ -17,4 +9,3 @@ ntp::config_restrict:
   - '-6 default kod nomodify notrap nopeer noquery'
   - '127.0.0.1'
   - '-6 ::1'
-ntp::config_driftfile: driftfile /var/lib/ntp/drift
