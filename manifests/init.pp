@@ -26,7 +26,7 @@ class ntp (
   Boolean                     $service_manage   = true ,
   Boolean                     $service_enable   = true ,
   Enum['running', 'stopped']  $service_ensure   = 'running' ,
-  String                      $service_name     ,
+  String                      $service_name     = 'ntpd',
   Array[String]               $config_restrict  = {},
   Array[String]               $config_servers   = {},
 ) {
