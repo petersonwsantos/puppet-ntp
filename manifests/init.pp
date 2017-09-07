@@ -1,3 +1,7 @@
+# NTP - Used for managing NTP
+# 
+#
+# 
 class ntp (
   String $package_ensure,
   Boolean $package_manage,
@@ -10,7 +14,6 @@ class ntp (
   Array[String] $config_restrict,
   Array[String] $config_driftfile,
 ) {
-  
   contain ntp::install
   contain ntp::config
   contain ntp::service

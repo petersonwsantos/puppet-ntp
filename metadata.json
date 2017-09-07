@@ -5,7 +5,7 @@
   "summary": "Module for NTP",
   "license": "Apache-2.0",
   "source": "https://github.com/petersonwsantos/puppet-ntp",
-  "issues_url": "https://github.com/petersonwsantos/puppet-ntp/issue",
+  "issues_url": "https://github.com/petersonwsantos/puppet-ntp/issues",
   "project_page": "https://github.com/petersonwsantos/puppet-ntp",
   "dependencies": [
     {
@@ -45,7 +45,7 @@
   "requirements": [
     {
       "name": "puppet",
-      "version_requirement": ">= 5.0.0 < 6.0.0"
+      "version_requirement": ">= 4.7.0 < 6.0.0"
     }
   ],
   "pdk-version": "1.0.1",

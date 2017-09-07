@@ -9,10 +9,9 @@
 class ntp::config  inherits ntp {
 
   file {'/etc/ntp.conf':
-    ensure => 'file',
-    mode => '0644',
-    content => template("ntp/ntp.conf.erb"),
-    #notify => Service[' $ntp::service_name'],
+    ensure  => 'file',
+    mode    => '0644',
+    content => template('ntp/ntp.conf.erb'),
   }
 
 }
