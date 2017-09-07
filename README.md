@@ -63,7 +63,7 @@ class { '::ntp':
   ],
 }
 ```
-
+ 
 ## Reference
 
 ### Classes
