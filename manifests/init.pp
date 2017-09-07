@@ -22,15 +22,15 @@
 #   include ntp
 #
 class ntp (
-  Boolean                     $package_manage   = true,
-  Array[String]               $package_name     = {},
-  Boolean                     $service_manage   = true ,
-  Boolean                     $service_enable   = true ,
-  Enum['running', 'stopped']  $service_ensure   = running,
-  String                      $service_name     = ntpd ,
-  Array[String]               $config_restrict  = {} ,
-  Stdlib::Absolutepath        $config_driftfile = '/var/lib/ntp/ntp.drift ,
-  Array[String]               $config_servers   = {} ,
+  Boolean                     $package_manage   ,
+  Array[String]               $package_name     ,
+  Boolean                     $service_manage   ,
+  Boolean                     $service_enable   ,
+  Enum['running', 'stopped']  $service_ensure   ,
+  String                      $service_name     ,
+  Array[String]               $config_restrict  ,
+  Stdlib::Absolutepath        $config_driftfile ,
+  Array[String]               $config_servers   ,
 ) {
 
   contain ntp::install
