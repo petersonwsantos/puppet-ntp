@@ -29,7 +29,7 @@ class ntp (
   Enum['running', 'stopped']  $service_ensure   ,
   String                      $service_name     ,
   Array[String]               $config_restrict  ,
-  Stdlib::Absolutepath        $config_driftfile ,
+  Stdlib::Absolutepath        $config_driftfile = '/var/lib/ntp/drift',
   Array[String]               $config_servers   ,
 ) {
 
