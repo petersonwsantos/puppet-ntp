@@ -22,7 +22,7 @@ Vagrant.configure("2") do |config|
       echo "node default { include ::ntp }" > /etc/puppetlabs/code/environments/production/manifests/site.pp
       rm -rfv /etc/puppetlabs/code/environments/production/modules/ntp
       cp /vagrant /etc/puppetlabs/code/environments/production/modules/ntp -rfv 
-      /opt/puppetlabs/bin/puppet module install puppetlabs-stdlib    
+      /opt/puppetlabs/bin/puppet module install puppetlabs-stdlib --version 4.19.0
       echo "/opt/puppetlabs/bin/puppet apply /etc/puppetlabs/code/environments/production/manifests/site.pp"  > /sbin/apply.sh
       chmod +x  /sbin/apply.sh
     SHELL
@@ -45,11 +45,13 @@ Vagrant.configure("2") do |config|
       setenforce 0
       echo "Installing puppet agent"
       rpm -Uvh https://yum.puppetlabs.com/puppet5/puppet5-release-el-7.noarch.rpm
-      yum install -y puppet-agent
+      yum install -y puppet-agent 
+      yum install -y rubygems
+      gem install puppet-lint
       echo "node default { include ::ntp }" > /etc/puppetlabs/code/environments/production/manifests/site.pp
       rm -rfv /etc/puppetlabs/code/environments/production/modules/ntp
       cp /vagrant /etc/puppetlabs/code/environments/production/modules/ntp -rfv 
-      /opt/puppetlabs/bin/puppet module install puppetlabs-stdlib    
+      /opt/puppetlabs/bin/puppet module install puppetlabs-stdlib --version 4.19.0    
       echo "/opt/puppetlabs/bin/puppet apply /etc/puppetlabs/code/environments/production/manifests/site.pp"  > /sbin/apply.sh
       chmod +x  /sbin/apply.sh
     SHELL

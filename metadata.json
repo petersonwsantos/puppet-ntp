@@ -8,7 +8,10 @@
   "issues_url": "https://github.com/petersonwsantos/puppet-ntp/issues",
   "project_page": "https://github.com/petersonwsantos/puppet-ntp",
   "dependencies": [
-    {"name":"puppetlabs/chocolatey","version_requirement":">= 2.6.0 < 4.0.0"}
+    {
+      "name": "puppetlabs/stdlib",
+      "version_requirement": ">= 4.6.0 < 5.0.0"
+    }    
   ],
   "operatingsystem_support": [
     {
